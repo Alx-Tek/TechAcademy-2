@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <title>A Cura Minha</title>
+        <link rel="shortcut icon" href="imagens/icone.png">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" title="Home">
+                <img src="imagens/logo.png" alt="A Cura Minha" title="A Cura Minha">
+            </a>
+            <a href="javascript:mostrarmenu()" class="menu">
+            </a>
+            <nav> 
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">
+                        Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" title="Sobre">
+                        Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nonecsiste.html" title="Estoque">
+                            Estoque
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nonecsiste.html" title="Contato">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <img src="imagens/banner.png" alt="Banner" title="Banner">
+        </div>
+        <main>
+            <h1>Poções em Destaque</h1>
+            <div class="grid">
+                <div class="coluna">
+                    <img src="imagens/1.png" alt="Poção 1" title="Poção 1">
+                    <p>Poção da Cura do Câncer</p>
+                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
+                        <i class="fas fa-search"></i>
+                        Ver Detalhes
+                    </a></p>
+                </div>
+                <div class="coluna">
+                    <img src="imagens/2.png" alt="Poção 2" title="Poção 2">
+                    <p>Veneno de Gente</p>
+                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
+                        <i class="fas fa-search"></i>
+                        Ver Detalhes
+                    </a></p>
+                </div>
+                <div class="coluna">
+                    <img src="imagens/3.png" alt="Poção 3" title="Poção 3">
+                    <p>Poção da Cura de Gostar de Jogar LOL (vômito)</p>
+                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
+                        <i class="fas fa-search"></i>
+                        Ver Detalhes
+                    </a></p>
+                </div>
+                <div class="coluna">
+                    <img src="imagens/4.png" alt="Poção 4" title="Poção 4">
+                    <p>Poção de Retorno Paterno</p>
+                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
+                        <i class="fas fa-search"></i>
+                        Ver Detalhes
+                    </a></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Todos os direitos reservados</p>
+            <p>
+                <a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.x.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </p>
+        </footer>
+        <script>
+            function mostrarmenu() {
+                document.querySelector("header nav").classList.toggle("mostrar");
+            }
+        </script>
+    </body>
+</html>

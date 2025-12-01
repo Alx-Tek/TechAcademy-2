@@ -1,0 +1,165 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    padding-top: 100px ;
+}
+
+header {
+    width: 100%;
+    background: rgb(155, 195, 255);
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 40px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    transition: all .5s;
+}
+
+header nav ul li a:hover {
+    color: rgb(30, 0, 90);    
+}
+
+header img {
+    width: 350px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+main h1, footer p {
+    text-align: center;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.grid .coluna img {
+    width: 100%;
+}
+
+.grid .coluna {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn {
+    background: rgb(155, 195, 255);
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 100px;
+    color: rgb(30, 0, 90);
+    transition: all .5s;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(30, 0, 165);
+}
+
+footer {
+    background: rgb(155, 195, 255);
+    padding: 20px 0px;
+}
+
+footer p a {
+    display: inline-block;
+}
+
+footer a {
+    background: white;
+    color: rgb(30, 0, 90);
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    transition: all .5s;
+}
+
+footer a:hover {
+    background: rgb(30, 0, 165);
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+@media (max-width: 420px) {
+    .banner {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    .grid {
+        grid-template-columns: 100%;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    .menu {
+        display: block;
+        border: 1px solid white;
+        padding: 15px 10px;
+        color: white;
+        float: right;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+}
+

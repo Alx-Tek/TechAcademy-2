@@ -58,6 +58,65 @@ main h1, footer p {
 main {
     width: 1000px;
     margin: auto;
+    padding: 75px 0 75px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    margin: 30px auto;
+}
+
+.formulario-container {
+    width: 100%;
+    display: block;
+    place-items: center;
+}
+
+.formulario:focus {
+    background: rgb(255, 255, 225);
+}
+
+.btn-submit, .btn-reset {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    margin-left: 20%;
+    place-items: center;
+    transition: all 0.5s
+}
+
+.btn-submit {
+    background: green;
+}
+
+.btn-reset {
+    background: red;
+}
+
+.btn-submit:hover {
+    background: white;
+    color: green;
+    font-size: 17px;
+    cursor: pointer;
+    border: 5px solid green;
+}
+
+.btn-reset:hover {
+    background: white;
+    color: red;
+    font-size: 17px;
+    cursor: pointer;
+    border: 5px solid red
 }
 
 .grid {
@@ -77,17 +136,17 @@ main {
 }
 
 .btn {
-    background: rgb(155, 195, 255);
+    background: rgb(255, 120, 120);
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 100px;
-    color: rgb(30, 0, 90);
+    color: rgb(90, 0, 0);
     transition: all .5s;
 }
 
 .btn:hover {
     color: rgb(255, 255, 255);
-    background: rgb(30, 0, 165);
+    background: rgb(165, 0, 0);
 }
 
 footer {

@@ -46,45 +46,30 @@
                 </ul>
             </nav>
         </header>
-        <div class="banner">
-            <img src="imagens/banner.png" alt="Banner" title="Banner">
-        </div>
         <main>
-            <h1>Poções em Destaque</h1>
-            <div class="grid">
-                <div class="coluna">
-                    <img src="imagens/1.png" alt="Poção 1" title="Poção 1">
-                    <p>Poção da Cura do Câncer</p>
-                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
-                        <i class="fas fa-search"></i>
-                        Ver Detalhes
-                    </a></p>
+            <section class="container">
+                <h1>Entre em Contato</h1>
+                <div class="formulario">
+                    <form name="form-cadastro" action="" method="post" enctype="multipart/form-data" class="formulario-container">
+                        <label for="nome">Digite seu nome:</label>
+                        <input type="text" class="formulario" name="nome" id="nome" size="50" maslength="40" placeholder="Nome Completo" autocomplete="off" required>
+                        <br>
+                        <label for="email">Digite seu e-mail:</label>
+                        <input type="email" name="email" id="email" maxlength="50" placeholder="Digite um e-mail válido" autocomplete="off" required class="formulario" inputmode="email">
+                        <br>
+                        <label for="mensagem">Escreva sua mensagem</label>
+                        <br>
+                        <textarea name="mensagem" id="mensagem" required placeholder="Digite uma mensagem" class="formulario" rows="15"></textarea>
+                        <br>
+                        <button type="submit" class="btn-submit" onclick="validar()">
+                            Enviar Dados
+                        </button>
+                        <button type="reset" class="btn-reset">
+                            Redefinir
+                        </button>
+                    </form>
                 </div>
-                <div class="coluna">
-                    <img src="imagens/2.png" alt="Poção 2" title="Poção 2">
-                    <p>Veneno de Gente</p>
-                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
-                        <i class="fas fa-search"></i>
-                        Ver Detalhes
-                    </a></p>
-                </div>
-                <div class="coluna">
-                    <img src="imagens/3.png" alt="Poção 3" title="Poção 3">
-                    <p>Poção da Cura de Gostar de Jogar LOL (vômito)</p>
-                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
-                        <i class="fas fa-search"></i>
-                        Ver Detalhes
-                    </a></p>
-                </div>
-                <div class="coluna">
-                    <img src="imagens/4.png" alt="Poção 4" title="Poção 4">
-                    <p>Poção de Retorno Paterno</p>
-                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
-                        <i class="fas fa-search"></i>
-                        Ver Detalhes
-                    </a></p>
-                </div>
-            </div>
+            </section>
         </main>
         <footer>
             <p>Todos os direitos reservados</p>

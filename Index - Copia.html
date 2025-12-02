@@ -4,14 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/all.min.css">
-                
-        <script type="text/javascript" src="js/script.js"></script>
-
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -51,30 +46,45 @@
                 </ul>
             </nav>
         </header>
+        <div class="banner">
+            <img src="imagens/banner.png" alt="Banner" title="Banner">
+        </div>
         <main>
-            <section class="container">
-                <h1 class="text-center">Entre em Contato</h1>
-                <div class="formulario">
-                    <form name="form-cadastro" action="" method="post" enctype="multipart/form-data" class="formulario-container">
-                        <label for="nome">Digite seu nome:</label>
-                        <input type="text" class="formulario" name="nome" id="nome" size="50" maslength="40" placeholder="Nome Completo" autocomplete="off" required>
-                        <br>
-                        <label for="email">Digite seu e-mail:</label>
-                        <input type="email" name="email" id="email" maxlength="50" placeholder="Digite um e-mail válido" autocomplete="off" required class="formulario" inputmode="email">
-                        <br>
-                        <label for="mensagem">Escreva sua mensagem</label>
-                        <br>
-                        <textarea name="mensagem" id="mensagem" required placeholder="Digite uma mensagem" class="formulario" rows="15"></textarea>
-                        <br>
-                        <button type="submit" class="btn btn-success" onclick="validar()">
-                            Enviar Dados
-                        </button>
-                        <button type="reset" class="btn btn-danger">
-                            Redefinir
-                        </button>
-                    </form>
+            <h1>Poções em Destaque</h1>
+            <div class="grid">
+                <div class="coluna">
+                    <img src="imagens/1.png" alt="Poção 1" title="Poção 1">
+                    <p>Poção da Cura do Câncer</p>
+                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
+                        <i class="fas fa-search"></i>
+                        Ver Detalhes
+                    </a></p>
                 </div>
-            </section>
+                <div class="coluna">
+                    <img src="imagens/2.png" alt="Poção 2" title="Poção 2">
+                    <p>Poçaõ de Veneno de Gente</p>
+                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
+                        <i class="fas fa-search"></i>
+                        Ver Detalhes
+                    </a></p>
+                </div>
+                <div class="coluna">
+                    <img src="imagens/3.png" alt="Poção 3" title="Poção 3">
+                    <p>Poção da Cura de Gostar de Jogar LOL (vômito)</p>
+                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
+                        <i class="fas fa-search"></i>
+                        Ver Detalhes
+                    </a></p>
+                </div>
+                <div class="coluna">
+                    <img src="imagens/4.png" alt="Poção 4" title="Poção 4">
+                    <p>Poção de Retorno Paterno</p>
+                    <p><a href="nonecsiste.html" title="Detalhes" class="btn">
+                        <i class="fas fa-search"></i>
+                        Ver Detalhes
+                    </a></p>
+                </div>
+            </div>
         </main>
         <footer>
             <p>Todos os direitos reservados</p>

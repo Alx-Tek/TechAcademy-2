@@ -1,0 +1,250 @@
+$font-main: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+
+$color-primary: rgb(155,195,255);
+$color-dark: rgb(30,0,90);
+$color-title: rgb(30,0,165);
+
+$btn-submit-color: green;
+$btn-reset-color: red;
+
+$btn-hover-font-size: 17px;
+
+* {
+    font-family: $font-main;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    padding-top: 100px;
+}
+
+header {
+    width: 100%;
+    background: $color-primary;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+
+    nav {
+        float: right;
+
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin: 40px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 24px;
+                    font-weight: 800;
+                    transition: all .5s;
+
+                    &:hover {
+                        color: $color-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        width: 350px;
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
+    }
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    padding: 75px 0 75px 0;
+
+    h1, h2 {
+        text-align: center;
+        color: $color-title;
+    }
+}
+
+footer {
+    p {
+        text-align: center;
+    }
+}
+
+label {
+    font-weight: bold;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    margin: 30px auto;
+
+    &:focus {
+        background: rgb(255,255,225);
+    }
+}
+
+.formulario-container {
+    width: 100%;
+    display: block;
+    place-items: center;
+}
+
+.btn-submit, .btn-reset {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    margin-left: 20%;
+    place-items: center;
+    transition: all 0.5s;
+
+    &:hover {
+        background: white;
+        font-size: $btn-hover-font-size;
+        cursor: pointer;
+        border: 5px solid;
+    }
+}
+
+.btn-submit {
+    background: $btn-submit-color;
+
+    &:hover {
+        color: $btn-submit-color;
+        border-color: $btn-submit-color;
+    }
+}
+
+.btn-reset {
+    background: $btn-reset-color;
+
+    &:hover {
+        color: $btn-reset-color;
+        border-color: $btn-reset-color;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+
+    .coluna {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.btn {
+    background: rgb(255,120,120);
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 100px;
+    color: rgb(90,0,0);
+    transition: all .5s;
+
+    &:hover {
+        color: white;
+        background: rgb(165,0,0);
+    }
+}
+
+footer {
+    background: $color-primary;
+    padding: 20px 0px;
+
+    p a {
+        display: inline-block;
+    }
+
+    a {
+        background: white;
+        color: $color-dark;
+        text-decoration: none;
+        margin: 20px;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        transition: all .5s;
+
+        &:hover {
+            background: $color-title;
+            color: white;
+        }
+    }
+}
+
+.menu {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+@media (max-width: 420px) {
+    .banner {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+    header {
+        nav {
+            display: none;
+
+            ul {
+                display: block;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    width: 100%;
+                }
+            }
+        }
+
+        img {
+            width: 300px;
+        }
+    }
+
+    .menu {
+        display: block;
+        border: 1px solid white;
+        padding: 15px 10px;
+        color: white;
+        float: right;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+}
